@@ -10,7 +10,11 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+body{
+  width: 100vw;
+  max-width: ;
+  height: 100vh;
+}
 header {
   background-color: #fff2f3;
   color: #353448;
@@ -112,7 +116,7 @@ header {
   z-index: 0;
   position: absolute;
   width: 97px;
-  height: 122px;
+  height: 100%;
 }
 .gradiant-container-left {
   left: 0;
@@ -134,7 +138,7 @@ header {
 .actualite h5 {
   padding-top: 1rem;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
 }
 .info-concours {
@@ -192,7 +196,7 @@ header {
 .info-warn p {
   display: flex;
   align-items: center;
-  font-size: 10px;
+  font-size: 9px;
 }
 .what-number {
   color: #3a960e;
