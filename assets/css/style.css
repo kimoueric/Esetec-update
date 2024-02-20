@@ -1,23 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --primary: #e51f26;
+  --secondary: #1f0a0a;
+  --third: #f2dede;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
-body{
-  width: 100vw;
-  max-width: ;
+
+body {
+  width: 100%;
   height: 100vh;
 }
 header {
-  background-color: #fff2f3;
-  color: #353448;
+  color: var(--secondary);
   padding-block-start: 10px;
 }
 
@@ -27,6 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-inline: 2.5rem;
+  padding-block-end: 20px;
 }
 .item-container ul {
   display: flex;
@@ -34,52 +39,49 @@ header {
 .item-container ul li {
   margin-inline: 1.8rem;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .join-us-btn {
   width: 192px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 51px;
-  background-color: #009982;
+  height: 45px;
+  background-color: var(--primary);
   color: #ffff;
   font-weight: 500;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 .call-us-btn {
   width: 192px;
-  color: #009982;
-  height: 51px;
-  font-weight: 500;
-  border: 1px solid #009982;
-  background-color: #fff2f3;
+  color: var(--secondary);
+  height: 45px;
+  font-weight: 600;
+  border: none;
+  background-color: var(--third);
   margin-inline-start: 1.8rem;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 .other {
   display: flex;
   padding-inline: 2.5rem;
   justify-content: space-around;
 }
-.other .left-container h4 {
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 80px;
-}
+
 
 .other .left-container h1 {
-  width: 98%;
-  font-size: 55px;
-  font-weight: 600;
+  margin-top: 2rem;
+  width: 90%;
+  font-size: 64px;
+  font-weight: 800;
 }
 .other .left-container p {
   margin-top: 1.2rem;
-  width: 80%;
+  width: 70%;
   line-height: 27px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 .other .left-container .btn-container {
   margin-block-start: 1rem;
@@ -94,8 +96,9 @@ header {
   margin-bottom: 1rem;
 }
 .actualites .left-container {
-  background-color: #009982;
-  width: 27%;
+  border-radius: 5px;
+  background-color: var(--primary);
+  width: 20%;
   margin-inline-end: 0.2rem;
 }
 .actualites .left-container hr {
@@ -104,10 +107,11 @@ header {
 }
 .actualites .info-actualite {
   position: relative;
+  border-radius:5px ;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #009982;
+  background-color: var(--primary);
   color: #fff;
   height: 90%;
   padding-inline: 1.2rem;
@@ -115,30 +119,24 @@ header {
 .gradiant-container {
   z-index: 0;
   position: absolute;
+  border-radius:5px ;
   width: 97px;
   height: 100%;
 }
 .gradiant-container-left {
   left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.5018382352941176) 0%,
-    rgba(0, 153, 130, 1) 34%
-  );
+  background: linear-gradient(to right, #1f0a0a, #e51f26);
 }
 .gradiant-container-right {
   right: 0;
-  background: rgb(0, 153, 130);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 153, 130, 1) 66%,
-    rgba(0, 0, 0, 0.5018382352941176) 100%
-  );
+  background: linear-gradient(to left, #1f0a0a, #e51f26);
+
 }
 .actualite h5 {
+  width: 80%;
   padding-top: 1rem;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
 }
 .info-concours {
@@ -149,6 +147,7 @@ header {
   margin-top: 0.2rem;
 }
 .info-concours h5 {
+  width: 80%;
   font-weight: bold;
   font-size: 11px;
   color: #fff;
@@ -171,17 +170,19 @@ header {
   font-weight: 600;
 }
 .item p {
-  font-size: 12px;
+  font-size: 11px;
 }
 .actualites .right-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .info-warn {
   color: #fff;
-  background-color: #e72026;
+  background-color: var(--secondary);
   padding: 0.5rem;
+  border-radius:2px ;
   display: flex;
   align-items: center;
   height: 17%;
@@ -196,10 +197,10 @@ header {
 .info-warn p {
   display: flex;
   align-items: center;
-  font-size: 9px;
+  font-size: 9.5px;
 }
 .what-number {
-  color: #3a960e;
-  margin-inline-start: 0.3rem;
+  color: var(--primary);
+  margin-inline-start: 0.5rem;
   font-weight: bold;
 }
